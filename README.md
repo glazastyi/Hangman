@@ -4,4 +4,4 @@ Second homework on course on Software Design
 
 Copyright © 2017 [Nikita Komarov]. See [license] for details.
 [Nikita Komarov]: https://github.com/glazastyi/
-[license]: LICENSE.txt
+[license]: LICENSE
