@@ -4,13 +4,12 @@
 class Hangman():
     """Hangman game"""
 
-
     def __init__(self, word, attempts_number):
 
         self.word = list(word)
         self.attempts_number = int(attempts_number)
         self.number_of_mistakes = 0
-        self.guessed_word = ["*" for el in word]
+        self.guessed_word = ["*"] * len(word)
         self.status = 0
 
     def attempt(self, letter):
@@ -21,8 +20,9 @@ class Hangman():
             print "Hit\n"
         else:
             self.number_of_mistakes += 1
-            print "Missed, mistake %s out of %s.\n" % (
-            self.number_of_mistakes, self.attempts_number)
+            x =  self.number_of_mistakes
+            y = self.attempts_number
+            print "Missed, mistake %s out of %s.\n" % (x,y)
 
     def check_status(self):
         if "*" not in self.guessed_word:
@@ -35,15 +35,15 @@ class Hangman():
 
 
 def game(word, attempts_number):
-    game = Hangman(word, attempts_number)
+    play = Hangman(word, attempts_number)
     print "Start game\n"
-    while (game.status == 0):
+    while play.status == 0:
         letter = raw_input("Guess a letter:")
-        game.attempt(letter)
-        game.check_status()
+        play.attempt(letter)
+        play.check_status()
 
-    return game.status
+    return play.status
 
 
 if __name__ == "__main__":
-    game()
+    game("hello", 5)
