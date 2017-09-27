@@ -11,7 +11,7 @@ class TestMethods(unittest.TestCase):
             Win
         """
         word = "Nikita"
-        game = Hangman(word,5)
+        game = Hangman(word, 5)
         for letter in word:
             game.attempt(letter)
         game.check_status()
@@ -38,6 +38,7 @@ class TestMethods(unittest.TestCase):
             game.attempt("a")
         game.check_status()
         self.assertEqual(game.status, -1)
+
 
 if __name__ == "__main__":
     unittest.main()

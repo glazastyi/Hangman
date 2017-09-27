@@ -1,7 +1,10 @@
 """Hangman game"""
 
+
 class Hangman():
     """Hangman game"""
+
+
     def __init__(self, word, attempts_number):
 
         self.word = list(word)
@@ -40,6 +43,7 @@ def game(word, attempts_number):
         game.check_status()
 
     return game.status
+
 
 if __name__ == "__main__":
     game()
