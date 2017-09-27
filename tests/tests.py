@@ -1,5 +1,4 @@
 """ Tests for Hangman """
-
 from Hangman import Hangman
 
 
@@ -12,7 +11,7 @@ def test_1(self):
     for letter in word:
         game.attempt(letter)
     game.check_status()
-    self.assertEqual(game.status, 1)
+    assert game.status == 1
 
 
 def test_2(self):
@@ -24,7 +23,7 @@ def test_2(self):
     for letter in word[:-1]:
         game.attempt(letter)
     game.check_status()
-    self.assertEqual(game.status, 0)
+    assert game.status == 0
 
 
 def test_3(self):
@@ -37,4 +36,6 @@ def test_3(self):
         print letter
         game.attempt("a")
     game.check_status()
-    self.assertEqual(game.status, -1)
+    assert game.status == -1
+
+
