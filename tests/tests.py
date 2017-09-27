@@ -14,6 +14,7 @@ def test_1(self):
     game.check_status()
     self.assertEqual(game.status, 1)
 
+
 def test_2(self):
     """
         The game is not over
@@ -24,6 +25,7 @@ def test_2(self):
         game.attempt(letter)
     game.check_status()
     self.assertEqual(game.status, 0)
+
 
 def test_3(self):
     """
@@ -36,5 +38,3 @@ def test_3(self):
         game.attempt("a")
     game.check_status()
     self.assertEqual(game.status, -1)
-
-
