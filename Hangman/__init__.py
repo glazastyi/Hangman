@@ -34,17 +34,17 @@ class Hangman(object):
             self.status = -1
 
 
-def game(word, attempts_number,checker):
+def game(word, attempts_number, checker):
     play = Hangman(word, attempts_number)
     print "Start game\n"
     count = 0
     while play.status == 0 and count < len(word):
-        letter = checker[count] #raw_input("Guess a letter:")
+        letter = checker[count]
         play.attempt(letter)
         play.check_status()
-        count+=1
+        count += 1
     return play.status
 
 
 if __name__ == "__main__":
-    game("hello", 5,"Hello")
+    game("hello", 5, "Hello")
