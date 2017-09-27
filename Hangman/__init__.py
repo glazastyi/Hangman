@@ -21,8 +21,8 @@ class Hangman(object):
         else:
             self.number_of_mistakes += 1
             nom = self.number_of_mistakes
-            am = self.attempts_number
-            print "Missed, mistake %s out of %s.\n" % (nom, am)
+            attnum = self.attempts_number
+            print "Missed, mistake %s out of %s.\n" % (nom, attnum)
 
     def check_status(self):
         if "*" not in self.guessed_word:
