@@ -2,7 +2,7 @@
 from Hangman import Hangman
 
 
-def test_1(self):
+def test_1():
     """
         Win
     """
@@ -14,7 +14,7 @@ def test_1(self):
     assert game.status == 1
 
 
-def test_2(self):
+def test_2():
     """
         The game is not over
     """
@@ -26,7 +26,7 @@ def test_2(self):
     assert game.status == 0
 
 
-def test_3(self):
+def test_3():
     """
         Lost
     """
@@ -37,5 +37,3 @@ def test_3(self):
         game.attempt("a")
     game.check_status()
     assert game.status == -1
-
-
