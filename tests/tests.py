@@ -35,6 +35,7 @@ class TestMethods(unittest.TestCase):
         word = "Nikita"
         game = Hangman(word, 5)
         for letter in word:
+            print letter
             game.attempt("a")
         game.check_status()
         self.assertEqual(game.status, -1)

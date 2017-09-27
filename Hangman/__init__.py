@@ -1,7 +1,7 @@
 """Hangman game"""
 
 
-class Hangman():
+class Hangman(object):
     """Hangman game"""
 
     def __init__(self, word, attempts_number):
@@ -20,9 +20,9 @@ class Hangman():
             print "Hit\n"
         else:
             self.number_of_mistakes += 1
-            x =  self.number_of_mistakes
-            y = self.attempts_number
-            print "Missed, mistake %s out of %s.\n" % (x,y)
+            nom = self.number_of_mistakes
+            am = self.attempts_number
+            print "Missed, mistake %s out of %s.\n" % (nom, am)
 
     def check_status(self):
         if "*" not in self.guessed_word:
