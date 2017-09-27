@@ -13,5 +13,5 @@ Copyright © 2017 [Nikita Komarov]. See [license] for details.
 
 [travis-url]: https://travis-ci.org/glazastyi/Hangman
 [travis-badge]: https://travis-ci.org/glazastyi/Hangman.svg?branch=master
-[coverage-image]: https://codecov.io/gh/PPPoSD-2017/greetings/branch/master/graph/badge.svg
-[coverage-url]: https://codecov.io/gh/PPPoSD-2017/greetings
+[coverage-image]: https://codecov.io/gh/glazastyi/Hangman/branch/master/graph/badge.svg
+[coverage-url]: https://codecov.io/gh/glazastyi/Hangman
