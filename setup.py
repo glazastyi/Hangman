@@ -12,7 +12,7 @@ setup(
     url="https://github.com/glazastyi/Hangman",
     license="MIT",
     packages=[
-        "greetings",
+        "Hangman",
     ],
     install_requires=[
     ],
