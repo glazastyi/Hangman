@@ -1,4 +1,4 @@
-from greetings import greet
+from Hangman import greet
 
 
 def test_greet_the_world():
