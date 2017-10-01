@@ -10,5 +10,4 @@ def test_check2():
     game.attempt("l")
     game.attempt("l")
     game.attempt("o")
-
     assert game.status == 1
