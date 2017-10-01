@@ -5,10 +5,7 @@ def test_check2():
     word = "Hello"
     attempts = 5
     game = Hangman(word, attempts)
-    game.attempt("H")
-    game.attempt("e")
-    game.attempt("l")
-    game.attempt("l")
-    game.attempt("o")
+    for el in word:
+        game.attempt(el)
     game.check_status()
     assert game.status == 1
