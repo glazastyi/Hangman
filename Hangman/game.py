@@ -1,4 +1,6 @@
 from Hangman import Hangman
+
+
 def game(word, attempts_number):
     play = Hangman(word, attempts_number)
     count = 0

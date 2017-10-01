@@ -32,4 +32,3 @@ class Hangman(object):
         if self.number_of_mistakes >= self.attempts_number:
             print "You lost :("
             self.status = -1
-
