@@ -5,19 +5,23 @@
 
 Second homework on course on Software Design.
 
-## Copyright
-Copyright © 2017 [Nikita Komarov]. See [license] for details.
+Hangman is a paper and pencil guessing game for two or more players. One player thinks of a word, phrase or sentence and the other tries to guess it by suggesting letters or numbers, within a certain number of guesses.
 
-## Install
+#### Install
 ```sh
 ./setup.py install
 ```
-## Play
+#### Play
 
 ```sh
 cd Hangman
 ./game
 ```
+
+## Copyright
+Copyright © 2017 [Nikita Komarov]. See [license] for details.
+
+
 
 
 [Nikita Komarov]: https://github.com/glazastyi/
