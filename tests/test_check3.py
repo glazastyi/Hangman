@@ -10,6 +10,7 @@ def test_check2():
     game.attempt("l")
     game.attempt("l")
     game.attempt("a")
+    game.check_status()
     assert game.status == 0
     assert game.number_of_mistakes == 1
     game.attempt("a")
@@ -20,5 +21,6 @@ def test_check2():
     assert game.number_of_mistakes == 4
     game.attempt("a")
     assert game.number_of_mistakes == 5
+    game.check_status()
     assert game.status == -1
 
