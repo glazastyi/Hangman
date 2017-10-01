@@ -8,11 +8,11 @@ Second homework on course on Software Design.
 ## Copyright
 Copyright © 2017 [Nikita Komarov]. See [license] for details.
 
-##Install
+## Install
 ```sh
 ./setup.py install
 ```
-##Play
+## Play
 
 ```sh
 cd Hangman
