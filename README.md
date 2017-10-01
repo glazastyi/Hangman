@@ -8,6 +8,18 @@ Second homework on course on Software Design.
 ## Copyright
 Copyright © 2017 [Nikita Komarov]. See [license] for details.
 
+##Install
+```sh
+./setup.py install
+```
+##Play
+
+```sh
+cd Hangman
+./game
+```
+
+
 [Nikita Komarov]: https://github.com/glazastyi/
 [license]: LICENSE
 

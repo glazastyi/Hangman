@@ -33,18 +33,3 @@ class Hangman(object):
             print "You lost :("
             self.status = -1
 
-
-def game(word, attempts_number, checker):
-    play = Hangman(word, attempts_number)
-    print "Start game\n"
-    count = 0
-    while play.status == 0 and count < len(word):
-        letter = checker[count]
-        play.attempt(letter)
-        play.check_status()
-        count += 1
-    return play.status
-
-
-if __name__ == "__main__":
-    game("hello", 5, "Hello")
