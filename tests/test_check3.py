@@ -1,12 +1,12 @@
 from Hangman import Hangman
 
 
-def test_check2():
+def test_check3():
     word = "Hello"
     attempts = 5
     game = Hangman(word, attempts)
-    for el in word[:-1]:
-        game.attempt(el)
+    for elem in word[:-1]:
+        game.attempt(elem)
     game.attempt("a")
     game.check_status()
     assert game.status == 0
