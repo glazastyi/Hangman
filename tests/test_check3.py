@@ -23,4 +23,3 @@ def test_check2():
     assert game.number_of_mistakes == 5
     game.check_status()
     assert game.status == -1
-
